@@ -1,0 +1,102 @@
+.projects {
+    padding-top: var(--typical-padding-gap);
+    padding-bottom: var(--typical-padding-gap);
+}
+
+.projects-filters__list {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-filters__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.projects-filters__btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: var(--second-btn-color);
+    background-color: #F5F4FA;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: #FFFFFF;
+        background-color: #2196F3;
+        box-shadow: var(--filters-shadow);
+    }
+}
+
+.projects-works__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--typical-margin-gap));
+    margin-top: calc(-1 * var(--typical-margin-gap));
+}
+
+.projects-works__item {
+    flex-basis: calc(100% / 3 - var(--typical-margin-gap));
+    margin-left: var(--typical-margin-gap);
+    margin-top: var(--typical-margin-gap);
+    cursor: pointer;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        box-shadow: var(--projects-card-shadow)
+    }
+    &:hover .card__text {
+        transform: translateY(0);
+    }
+}
+
+.projects-works__title {
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+    margin-bottom: 4px;
+}
+
+.projects-works__subtitle {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+.card__content {
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+
+.card__text {
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding: 63px 24px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card__thumb {
+    position: relative;
+    overflow: hidden;
+}
