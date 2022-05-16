@@ -1,15 +1,30 @@
 .advantage {
-    padding-top: var(--typical-padding-gap);
-    padding-bottom: var(--typical-padding-gap);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-top: var(--typical-padding-gap);
+        padding-bottom: var(--typical-padding-gap);
+    }
 }
 
 .advantage__list {
-    display: flex;
+    margin-bottom: calc((-1) * var(--typical-margin-gap));
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc((-1) * var(--typical-margin-gap));
+    }
 }
 
 .advantage__item {
-    &:not(:last-child) {
-        margin-right: var(--typical-margin-gap);
+    margin-bottom: 30px;
+    @include tablet {
+        width: calc(100% / 2 - 30px);
+        margin-left: var(--typical-margin-gap);
+    }
+    @include desktop {
+        width: calc(100% / 4 - 30px);
     }
 
     &::before {
@@ -50,5 +65,5 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    width: 270px;
+    width: 100%;
 }

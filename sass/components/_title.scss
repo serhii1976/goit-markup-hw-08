@@ -4,7 +4,7 @@
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--title-color);
-    @media screen and (min-width: 1200px) {
+    @include desktop {
      font-size: 36px;
      line-height: 1.17;   
     };

@@ -5,7 +5,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms, visibility 250ms;
-    overflow: auto;
+    overflow: scroll;
 }
 
 .is-hidden {
@@ -32,12 +32,15 @@
     @include mobile {
         width: 450px;
     }
-    // @include tablet {
-    //     transform: translate(-50%, -50%) scale(1);
-    // }
+    @include tablet {
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+
+    }
     @include desktop {
         width: 528px;
-        // transform: translate(-50%, -50%) scale(1);
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
@@ -247,7 +250,6 @@
 
 .modal-form__link {
     color: #2196F3;
-    margin-left: 5px;
     text-decoration: underline;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
