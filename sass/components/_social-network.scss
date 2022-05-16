@@ -24,6 +24,7 @@
     &:hover,
     &:focus {
         background-color: var(--accent-color);
+        outline: transparent;
     &:focus .soc-list__icon {
         fill: #FFFFFF;
         }
