@@ -59,6 +59,9 @@
 .advantage__subtitle {
     color: var(--title-color);
     margin-bottom: 10px;
+    @include tablet {
+        text-align: start;
+    }
 }
 
 .advantage__text {

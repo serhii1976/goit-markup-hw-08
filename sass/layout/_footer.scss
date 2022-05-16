@@ -5,8 +5,26 @@
 }
 
 .footer__container {
+    text-align: center;
+    @include desktop {
+        display: flex;
+        align-items: baseline;
+        text-align: start;
+    }
+}
+
+.footer-adres-soc {
+    @include tablet {   
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
+    padding-left: 76px;
+    padding-right: 89px;
+    }
+    @include desktop {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .footer__logo {
@@ -18,8 +36,18 @@
     color: #FFFFFF;
 }
 
+.adress-list {
+    margin-bottom: 60px;
+    @include desktop {
+        margin-bottom: 0;
+    }
+}
+
 .adress-list__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @include desktop {
+        margin-bottom: 9px;
+    }
 }
 
 .adress-list__link {
@@ -40,29 +68,49 @@
 }
 
 .footer-soc {
-    margin-left: 70px;
+    margin-bottom: 60px;
+    @include tablet {
+        margin-bottom: 0;
+    }
+    @include desktop {
+        margin-left: 70px;
+    }
 }
 
 .footer-soc__subtitle {
     color: #FFFFFF;
     margin-bottom: 20px;
+    text-align: center;
+    @include desktop {
+        text-align: start
+    }
 }
 
 .subscription {
-    margin-left: auto;
+    display: block;
+    margin: 0 auto;
+    @include desktop {
+        margin: 0 0 0 auto;
+    }
+  
 }
 
 .subscription__subtitle {
     color: #FFFFFF;
     margin-bottom: 20px;
+    @include desktop {
+        text-align: start;
+    }
 }
 
 .subscription__form {
-    display: flex;
+    @include desktop {
+        display: flex;
+    }
 }
 
 .subscription__input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -75,10 +123,22 @@
     &::placeholder {
             color: rgba(255, 255, 255, 0.6);
         }
+    margin-bottom: 20px;
+    @include tablet {
+        width: 450px;
+    }
+    @include desktop {
+        width: 358px;
+        margin-bottom: 0;
+    }    
 }
 
 .subscription__btn {
-    margin-left: 12px;
+    margin: 0 auto;
+    @include desktop {
+        margin-left: 12px;
+    }
+
 }
 
 .subscription__icon {
