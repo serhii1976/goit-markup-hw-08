@@ -140,19 +140,25 @@
                     <h2 class="about__title title">Чем мы занимаемся</h2>
                     <ul class="about__list list">
                         <li class="about__item">
-                            <img src="./images/img1.jpg" alt="Десктопные приложения" width="370">
+                            <img
+                                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
+                                src="./images/img1.jpg" alt="Десктопные приложения" width="370">
                             <div class="label">
                                 <h3 class="label__subtitle subtitle">Десктопные приложения</h3>
                             </div>
                         </li>
                         <li class="about__item">
-                            <img src="./images/img2.jpg" alt="Мобильные приложения" width="370">
+                            <img
+                                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
+                                src="./images/img2.jpg" alt="Мобильные приложения" width="370">
                             <div class="label">
                                 <h3 class="label__subtitle subtitle">Мобильные приложения</h3>
                             </div>
                         </li>
                         <li class="about__item">
-                            <img src="./images/img3.jpg" alt="Дизайнерские решения" width="370">
+                            <img
+                                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
+                                src="./images/img3.jpg" alt="Дизайнерские решения" width="370">
                             <div class="label">
                                 <h3 class="label__subtitle subtitle">Дизайнерские решения</h3>
                             </div>
@@ -167,7 +173,22 @@
                     <h2 class="team-cards__title title">Наша команда</h2>
                     <ul class="team-cards__list list">
                         <li class="team-cards__item">
-                            <img src="./images/team-card1.jpg" alt="Product Designer" class="team-cards__img" width="100%">
+                            <picture>
+                                <source
+                                    srcset="
+                                    ./images/team-img/team-card1.jpg 1x,
+                                    ./images/team-img/team-card1-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="
+                                    ./images/team-img/team-card1-tab.jpg 1x,
+                                    ./images/team-img/team-card1-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="    
+                                    ./images/team-img/team-card1-mob.jpg 1x,
+                                    ./images/team-img/team-card1-mob-2x.jpg 2x"
+                                    media="(min-width: 320px)">
+                                <img src="./images/team-img/team-card1-mob.jpg" alt="Product Designer" class="team-cards__img" width="100%">
+                            </picture>
                             <h3 class="team-cards__subtitle">Игорь Демьяненко</h3>
                             <p class="team-cards__text">Product Designer</p>
                             <ul class="soc-list soc-list--team list">
@@ -202,7 +223,21 @@
                             </ul>                    
                         </li>
                         <li class="team-cards__item">
-                            <img src="./images/team-card2.jpg" alt="Frontend Developer" class="team-cards__img" width="100%">
+                            <picture>
+                                <source srcset="
+                                    ./images/team-img/team-card2.jpg 1x,
+                                    ./images/team-img/team-card2-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="
+                                    ./images/team-img/team-card2-tab.jpg 1x,
+                                    ./images/team-img/team-card2-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="    
+                                    ./images/team-img/team-card2-mob.jpg 1x,
+                                    ./images/team-img/team-card2-mob-2x.jpg 2x"
+                                    media="(min-width: 320px)">
+                            <img src="./images/team-img/team-card2-mob.jpg" alt="Frontend Developer" class="team-cards__img" width="100%">
+                            </picture>
                             <h3 class="team-cards__subtitle">Ольга Репина</h3>
                             <p class="team-cards__text">Frontend Developer</p>
                             <ul class="soc-list list">
@@ -237,7 +272,21 @@
                             </ul>                                 
                         </li>
                         <li class="team-cards__item">
-                            <img src="./images/team-card3.jpg" alt="Marketing" class="team-cards__img" width="100%">
+                            <picture>
+                                <source srcset="
+                                    ./images/team-img/team-card3.jpg 1x,
+                                    ./images/team-img/team-card3-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="
+                                    ./images/team-img/team-card3-tab.jpg 1x,
+                                    ./images/team-img/team-card3-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="    
+                                    ./images/team-img/team-card3-mob.jpg 1x,
+                                    ./images/team-img/team-card3-mob-2x.jpg 2x"
+                                    media="(min-width: 320px)">
+                                <img src="./images/team-img/team-card3-mob.jpg" alt="Marketing" class="team-cards__img" width="100%">
+                            </picture>
                             <h3 class="team-cards__subtitle">Николай Тарасов</h3>
                             <p class="team-cards__text">Marketing</p>
                             <ul class="soc-list soc-list--team list">
@@ -272,7 +321,21 @@
                             </ul>                                 
                         </li>
                         <li class="team-cards__item">
-                            <img src="./images/team-card4.jpg" alt="UI Designer" class="team-cards__img" width="100%">
+                            <picture>
+                                <source srcset="
+                                    ./images/team-img/team-card4.jpg 1x,
+                                    ./images/team-img/team-card4-2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="
+                                    ./images/team-img/team-card4-tab.jpg 1x,
+                                    ./images/team-img/team-card4-tab-2x.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="    
+                                    ./images/team-img/team-card4-mob.jpg 1x,
+                                    ./images/team-img/team-card4-mob-2x.jpg 2x"
+                                    media="(min-width: 320px)">
+                                <img src="./images/team-img/team-card4-mob.jpg" alt="UI Designer" class="team-cards__img" width="100%">
+                            </picture>
                             <h3 class="team-cards__subtitle">Михаил Ермаков</h3>
                             <p class="team-cards__text">UI Designer</p>
                             <ul class="soc-list soc-list--team list">
